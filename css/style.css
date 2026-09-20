@@ -1,9 +1,9 @@
 @import url(sanitize.css);
 body{
-    background-color: #FFF7E1; /* 背景色をグレーに */
+    background-color: #FFF7E1; /* 背景色 */
     padding: 10px; /* 要素内の余白を10pxに */
     font-size: 14px; /* 文字の大きさを 14pxに */
-    color: #303030; /* 文字の色を濃い目のグレーに */
+    color: #303030; /* 文字の色 */
 }
 
 .container{
@@ -13,15 +13,15 @@ body{
 }
 
 header{
-    background-color: #2A5CAB; /* 背景色を茶色に */
-    padding: 40px; /* 要素内余白を30pxに */
-    font-size: 36px; /* 文字の大きさを36pxに */
+    background-color: #2A5CAB; /* 背景色 */
+    padding: 30px; /* 要素内余白を30pxに */
+    font-size: 48px; /* 文字の大きさを48pxに */
     color: #fff; /* 文字色を白に */
 }
 
 header h1{
     margin: 0; /* 余白をなくす */
-    font-size: 40px; /* 文字の大きさを24pxに */
+    font-size: 32px; /* 文字の大きさを24pxに */
     font-weight: normal; /* 文字の太さを普通に */
     text-align: center; /* テキストを中央揃えに */
 }
@@ -45,6 +45,14 @@ header h1{
     margin: 0 10px 10px 0; /* 余白を下と右に10pxづつ */
 }
 
+.information .type{
+    display: inline; /* インラインスタイルに変更 */
+    background-color: #E35A4D; /* 背景色をピンクに */
+    padding: 3px 5px; /* 要素内余白を上下3px、左右5pxに */
+    font-size: 80%; /* 文字の大きさを少し小さく */
+    color: #FFF; /* 文字色を白に */
+}
+
 .information .column-list{
     margin: 0 .5em; /* 左右にスペースを確保 */
     display: flex;        /* フレックスボックスを有効化 */
@@ -62,7 +70,7 @@ header h1{
 }
 
 .content{
-    background-color: #fff3d1; /* 背景色を白に */
+    background-color:#fff3d1; /* 背景色 */
     padding: 20px; /* 要素内余白を20pxに */
 }
 
@@ -75,7 +83,7 @@ header h1{
     font-size: 120%; /* フォントの大きさを本文より少し大きく */
     font-weight: bold; /* フォントの太さを太目に */
     margin: 0 0 10 0; /* 余白は下に10px */
-    background-color: #B98C46; /* 背景色を薄い茶色に */
+    background-color: #e2dde6; /* 背景色を薄い茶色に */
     padding: 5px 10px; /* 要素内の余白を上下 5px、左右 10pxに */
 }
 
@@ -87,7 +95,7 @@ header h1{
 .parag ul{
     padding-left: 2em; /* 番号のスペースを確保 */
     margin: 0; /* 余白をなくす */
-    list-style: disc inside; /* リストのスタイルを算用数字に */
+    /* list-style: disc inside; /* リストのスタイルを黒丸に */
 }
 
 .parag ul li{
@@ -111,6 +119,16 @@ header h1{
     list-style-position: outside; /*改行した2行目以降も番号に揃う */
 } 
 
+.parag ol.bracket li{
+    border: 0;
+    list-style-type: none;
+    counter-increment: cnt; /* カウンタを増やす */
+}
+
+.parag ol.bracket li::before{
+    content: "(" counter(cnt) ") "; /* カッコ付き数字を表示 */
+}
+
 .parag3{
     margin: 0 0 20px; /* 下の余白のみ20pxに */
 }
@@ -120,7 +138,7 @@ header h1{
     font-size: 120%; /* フォントの大きさを本文より少し大きく */
     font-weight: bold; /* フォントの太さを太目に */
     margin: 0 0 10 0; /* 余白は下に10px */
-    background-color: #B98C46; /* 背景色を薄い茶色に */
+    background-color: #e2dde6; /* 背景色を薄い茶色に */
     padding: 5px 10px; /* 要素内の余白を上下 5px、左右 10pxに */
 }
 
@@ -132,14 +150,12 @@ header h1{
 .parag3 ul{
     padding-left: 2em; /* 番号のスペースを確保 */
     margin: 0; /* 余白をなくす */
-    list-style: disc inside; /* リストのスタイルを算用数字に */
+    /* list-style: disc inside; リストのスタイルを黒丸に */
 }
 
 .parag3 ul li{
-    border-bottom: 1px solid #ccc; /* 要素の下に枠線を引く */
-    border-top: 1px solid #ccc; /* 要素の上に枠線を引く */;
+    border-bottom: 1px solid #ccc; /* 要素の下にのみ枠線を引く */
     padding: 5px 5px; /* 要素内余白を上下5px、左右5pxに */
-    margin-top: -1px; /* 上のボーダーに1px重ねて相殺する */
     list-style-position: outside; /*改行した2行目以降も番号に揃う */
 }
 

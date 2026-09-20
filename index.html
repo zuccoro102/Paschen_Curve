@@ -57,14 +57,17 @@
                                 <li>希薄気体(真空)放電の基本特性の一つである「パッシェン曲線」を実測し、タウンゼント理論に基づいた、真空放電開始機構の基礎を理解する。</li>
                                 <li>真空排気装置の基礎技術を習得する。</li>
                                 <li>測定するための電気回路を考え、組み立てる。</li>
-                                <li>参考資料</li>
+                                <li>参考資料
+                                <ul>
+                                <li>高村秀一、プラズマ理工学入門、森北出版</li>
+                                <li><a href="http://fusion.eie.eng.osaka-u.ac.jp/plasma/A7text.pdf">プラズマの基礎実験</a></li>
+                                <li><a href="http://student.ee.ous.ac.jp/exp4/manual_V9.pdf">電気電子工学実験III</a></li>
+                                <li><a href="https://www.cosmotec-co.jp/info/case/4996/">真空中の放電：パッシェンの法則について</a></li>
+                                <li>ChatGPT、GeminiなどのAI</li>
+                                <li>その他</li>
+                                </ul>
+                                </li>
                             </ul>
-                            <p style="padding-left: 3em; margin: 0;">・高村秀一、プラズマ理工学入門、森北出版</p>
-                            <p style="padding-left: 3em; margin: 0;"><a href="http://fusion.eie.eng.osaka-u.ac.jp/plasma/A7text.pdf">・プラズマの基礎実験</a></p>
-                            <p style="padding-left: 3em; margin: 0;"><a href="http://student.ee.ous.ac.jp/exp4/manual_V9.pdf">・電気電子工学実験III</a></p>
-                            <p style="padding-left: 3em; margin: 0;"><a href="https://www.cosmotec-co.jp/info/case/4996/">・真空中の放電：パッシェンの法則について</a></p>
-                            <P style="padding-left: 3em; margin: 0;">・ChatGPT、Gemini</P>
-                            <p style="padding-left: 3em; margin: 0;">・その他</p>
                         </div>
                         <div class="col-sm-6 align-center">
                             <img src="imgs/vacuumchamber.jpg" alt="vacuumchamber" width="80%">
@@ -89,8 +92,8 @@
                         <ul>
                             <li>対向する電極間に高電圧を印加していくと、ある限界値を超えた時に光や音を伴いながら放電が始まる。これを火花放電という。</li>
                             <li>気体中で放電が始まる電圧(火花電圧、絶縁破壊電圧)<math><msub><mi>V</mi><mi>s</mi></msub></math>は、その時の圧力<math><mi>p</mi></math>と電極間距離<math><mi>d</mi></math>の積に依存することが知られており、それを「パッシェンの法則」という。ある特定の<math><mi>p</mi><mi>d</mi></math>値で最も放電しやすくなる(<math><msub><mi>V</mi><mi>s</mi></msub></math>が低くなる)ことが知られている。</li>
-                            <li>タウンゼントの放電理論では、火花電圧<math><msub><mi>V</mi><mi>s</mi></msub></math>は次式で与えられる。</li>
-                            <math display="block" border="1" mathsize="1.5em" style="margin: 10px 0;">
+                            <li>タウンゼントの放電理論では、火花電圧<math><msub><mi>V</mi><mi>s</mi></msub></math>は次式で与えられる。
+                            <math display="block" border="1" mathsize="1.3em" style="margin: 10px 0;">
                                 <msub>
                                     <mi>V</mi><mi>s</mi>
                                 </msub>
@@ -122,9 +125,9 @@
                                     </mrow>
                                 </mfrac>
                             </math>
-                            <li>ここで、<math><msub><mi>V</mi><mi>s</mi></msub></math>: 火花電圧、<math><mi>A</mi></math>、<math><mi>B</mi></math>: 気体の種類で決まる定数(<math><mi>A</mi><mo>=1/</mo><msub><mi>λ</mi><mi>1</mi></msub></math>、<math><mi>B</mi></math> = <math><msub><mi>φ</mi><mi>i</mi></msub></math>/<math><msub><mi>λ</mi><mi>1</mi></msub></math>)、<math><msub><mi>φ</mi><mi>i</mi></msub></math>：電離エネルギー、<math><mi>γ</mi></math>：イオンによる二次電子放出率(電極表面状態や材質等に依存)である。<math><msub><mi>λ</mi><mi>1</mi></msub></math>は<math><mi>p</mi></math> = 1 Torrでの平均自由行程である。(高村秀一、プラズマ理工学入門より)</li>
-                            <li>この式において、下記のように<math><msub><mi>V</mi><mi>s</mi></msub></math>と<math><mi>p</mi><mi>d</mi></math>を<math><mi>y</mi></math>と<math><mi>x</mi></math>で規格化する。</li>
-                            <math display="block" border="1" mathsize="1.5em" style="margin: 10px 0;">
+                            ここで、<math><msub><mi>V</mi><mi>s</mi></msub></math>: 火花電圧、<math><mi>A</mi></math>、<math><mi>B</mi></math>: 気体の種類で決まる定数(<math><mi>A</mi><mo>=1/</mo><msub><mi>λ</mi><mi>1</mi></msub></math>、<math><mi>B</mi></math> = <math><msub><mi>φ</mi><mi>i</mi></msub></math>/<math><msub><mi>λ</mi><mi>1</mi></msub></math>)、<math><msub><mi>φ</mi><mi>i</mi></msub></math>：電離エネルギー、<math><mi>γ</mi></math>：イオンによる二次電子放出率(電極表面状態や材質等に依存)である。<math><msub><mi>λ</mi><mi>1</mi></msub></math>は<math><mi>p</mi></math> = 1 Torrでの平均自由行程である。(高村秀一、プラズマ理工学入門より)</li>
+                            <li>この式において、下記のように<math><msub><mi>V</mi><mi>s</mi></msub></math>と<math><mi>p</mi><mi>d</mi></math>を<math><mi>y</mi></math>と<math><mi>x</mi></math>で規格化する。
+                            <math display="block" border="1" mathsize="1.3em" style="margin: 10px 0;">
                                 <mi>y</mi>
                                 <mo>=</mo>
                                 <mfrac>
@@ -158,8 +161,9 @@
                                     </mrow>
                                 </mfrac>
                             </math>
-                            <li>すると、単純な次式を得る。</li>
-                            <math display="block" border="1" mathsize="1.5em" style="margin: 10px 0;">
+                            </li>
+                            <li>すると、単純な次式を得る。
+                            <math display="block" border="1" mathsize="1.3em" style="margin: 10px 0;">
                                 <mi>y</mi>
                                 <mo>=</mo>
                                 <mfrac>
@@ -171,6 +175,7 @@
                                     </mrow>
                                 </mfrac>
                             </math>
+                            </li>
                         </ul>
                         <div class="row">
                             <div class="col-sm-7">
@@ -230,7 +235,7 @@
                         </div>
                     </div>
                     <h2>今回用いた実験装置</h2>
-                    <div style="margin: 0 10px;" class="row">
+                    <div class="row">
                         <div class="col-sm-6">
                             <ul>
                                 <li>真空容器：Φ100 mm x 200 mm、ステンレス製。</li>
